@@ -1,11 +1,15 @@
+start = input('start number:') # 選擇範圍
+end = input('end number:')
+start = int(start)
+end = int(end)
 import random
-r = random.randint(1, 100)
+r = random.randint(start, end)
 count = 0
 print(r)
 print(' ')
 while True:
 	count += 1  #count = count + 1
-	num = input('guess number 1~100:')
+	num = input('guess number :')
 	num = int(num)
 	if num == r:
 		print(' ')
